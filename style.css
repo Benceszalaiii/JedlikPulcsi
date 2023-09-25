@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+*{
+    font-family: 'Inclusive Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 920px) {
+    #main h1{
+        font-size: 72px !important;
+    }
+    #main h2{
+        font-size: 48px !important;
+    }
+    #main h4{
+        font-size: 25px !important;
+    }
+}
+.page{
+    scroll-snap-type: y mandatory;
+
+    height: 100vh;
+    overflow: hidden;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+.content{
+    margin-left: 200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    flex-direction: row;
+}
+.header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    flex-direction: column;
+}
+#main{
+    background: rgb(7,1,97);
+    background: linear-gradient(0deg, rgba(7,1,97,1) 0%, rgba(4,111,159,1) 100%);
+    color: lightgray;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+#infos{
+    background: rgb(4,111,159);
+    background: linear-gradient(0deg, #5603ad 0%, rgba(7,1,97,1) 100%);
+}
+#jedlikes{
+    background: rgb(0,0,255);
+    background: linear-gradient(0deg, rgba(0,0,255,1) 0%, #5603ad 100%);
+
+}
+#gepesz{
+    background: rgb(43,43,219);
+    background: linear-gradient(180deg, rgba(0,0,255,1) 0%, rgba(43,43,219,1) 100%);
+}
+#main h1{
+    background: #1626FF;
+    background: linear-gradient(to right, #1626FF 0%, #781C99 19%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 72px;
+    font-weight: bolder;
+    }
+#main h2{
+    font-size: 2.5vw;
+}
+#main h4{
+    position: absolute;
+    bottom: 5%;
+    font-size: 1vw;
+}
+.indexPulcsi{
+    display: inline;
+    margin-left: auto;
+    margin-right: 100px;
+    height: 40vw;
+}
+a{
+    user-select: all;
+}
+.title{
+    color: lightgray;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+    font-size: 96px;
+}
+.description{
+    margin-left: 60px;
+    font-weight: bold;
+    color: lightgray;
+    align-items: center;
+    justify-content: left;
+    font-size: 24px;
+}
+button {
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    margin-left: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 2em;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+button:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+}
+
+button:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+}
+
