@@ -49,7 +49,7 @@ and (max-device-width : 920px) {
 }
 #main{
     background: rgb(7,1,97);
-    background: linear-gradient(0deg, rgba(7,1,97,1) 0%, rgba(4,111,159,1) 100%);
+    background: linear-gradient(0deg, rgba(7,1,97,1) 0%, #48cae4 100%);
     color: lightgray;
     font-weight: bold;
     overflow-y: scroll;
